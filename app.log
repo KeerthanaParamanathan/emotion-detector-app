@@ -1,0 +1,142 @@
+2025-04-09 11:07:03,482 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 11:07:03,492 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 11:07:03,495 - INFO -  * Restarting with stat
+2025-04-09 11:07:08,523 - WARNING -  * Debugger is active!
+2025-04-09 11:07:08,526 - INFO -  * Debugger PIN: 132-075-018
+2025-04-09 11:08:12,669 - INFO - 127.0.0.1 - - [09/Apr/2025 11:08:12] "GET / HTTP/1.1" 200 -
+2025-04-09 11:08:12,742 - INFO - 127.0.0.1 - - [09/Apr/2025 11:08:12] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:08:12,773 - INFO - 127.0.0.1 - - [09/Apr/2025 11:08:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-09 11:12:14,063 - INFO - 127.0.0.1 - - [09/Apr/2025 11:12:14] "POST /upload HTTP/1.1" 200 -
+2025-04-09 11:12:14,109 - INFO - 127.0.0.1 - - [09/Apr/2025 11:12:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:12:25,638 - INFO - 127.0.0.1 - - [09/Apr/2025 11:12:25] "POST /upload HTTP/1.1" 200 -
+2025-04-09 11:12:25,657 - INFO - 127.0.0.1 - - [09/Apr/2025 11:12:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:17:39,711 - INFO -  * Detected change in 'C:\\Users\\ALSANA THAHIR\\Downloads\\emotion_detection_app\\app.py', reloading
+2025-04-09 11:17:40,701 - INFO -  * Restarting with stat
+2025-04-09 11:24:08,823 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 11:24:08,826 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 11:24:08,831 - INFO -  * Restarting with stat
+2025-04-09 11:24:13,256 - WARNING -  * Debugger is active!
+2025-04-09 11:24:13,258 - INFO -  * Debugger PIN: 132-075-018
+2025-04-09 11:25:13,885 - INFO - 127.0.0.1 - - [09/Apr/2025 11:25:13] "GET / HTTP/1.1" 200 -
+2025-04-09 11:25:13,976 - INFO - 127.0.0.1 - - [09/Apr/2025 11:25:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:25:24,483 - INFO - 127.0.0.1 - - [09/Apr/2025 11:25:24] "GET / HTTP/1.1" 200 -
+2025-04-09 11:25:24,508 - INFO - 127.0.0.1 - - [09/Apr/2025 11:25:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:25:34,675 - INFO - 127.0.0.1 - - [09/Apr/2025 11:25:34] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-04-09 11:25:34,734 - INFO - 127.0.0.1 - - [09/Apr/2025 11:25:34] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-09 11:25:34,762 - INFO - 127.0.0.1 - - [09/Apr/2025 11:25:34] "GET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-09 11:25:34,854 - INFO - 127.0.0.1 - - [09/Apr/2025 11:25:34] "GET /upload?__debugger__=yes&cmd=resource&f=console.png&s=ufZOE6EvDzJD6Xgu5V2i HTTP/1.1" 200 -
+2025-04-09 11:25:34,876 - INFO - 127.0.0.1 - - [09/Apr/2025 11:25:34] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-09 11:28:06,488 - INFO -  * Detected change in 'C:\\Users\\ALSANA THAHIR\\Downloads\\emotion_detection_app\\app.py', reloading
+2025-04-09 11:28:06,961 - INFO -  * Restarting with stat
+2025-04-09 11:28:10,776 - WARNING -  * Debugger is active!
+2025-04-09 11:28:10,776 - INFO -  * Debugger PIN: 132-075-018
+2025-04-09 11:30:00,178 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 11:30:00,178 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 11:30:00,181 - INFO -  * Restarting with stat
+2025-04-09 11:30:04,041 - WARNING -  * Debugger is active!
+2025-04-09 11:30:04,042 - INFO -  * Debugger PIN: 132-075-018
+2025-04-09 11:30:09,394 - INFO - 127.0.0.1 - - [09/Apr/2025 11:30:09] "GET / HTTP/1.1" 200 -
+2025-04-09 11:30:09,476 - INFO - 127.0.0.1 - - [09/Apr/2025 11:30:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:30:18,210 - ERROR - Error loading file tweet_emotions.csv: 'ascii' codec can't decode byte 0xc3 in position 56801: ordinal not in range(128)
+2025-04-09 11:30:18,219 - INFO - 127.0.0.1 - - [09/Apr/2025 11:30:18] "POST /upload HTTP/1.1" 200 -
+2025-04-09 11:30:18,247 - INFO - 127.0.0.1 - - [09/Apr/2025 11:30:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:37:43,303 - INFO -  * Detected change in 'C:\\Users\\ALSANA THAHIR\\Downloads\\emotion_detection_app\\app.py', reloading
+2025-04-09 11:37:43,916 - INFO -  * Restarting with stat
+2025-04-09 11:37:49,606 - WARNING -  * Debugger is active!
+2025-04-09 11:37:49,610 - INFO -  * Debugger PIN: 132-075-018
+2025-04-09 11:41:10,177 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 11:41:10,177 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 11:41:10,177 - INFO -  * Restarting with stat
+2025-04-09 11:41:13,863 - WARNING -  * Debugger is active!
+2025-04-09 11:41:13,864 - INFO -  * Debugger PIN: 132-075-018
+2025-04-09 11:41:22,549 - INFO - 127.0.0.1 - - [09/Apr/2025 11:41:22] "GET / HTTP/1.1" 200 -
+2025-04-09 11:41:33,341 - INFO - Loading file: tweet_emotions.csv
+2025-04-09 11:41:33,343 - INFO - Detected encoding: ascii
+2025-04-09 11:41:33,348 - WARNING - Default CSV load failed: 'ascii' codec can't decode byte 0xc3 in position 56801: ordinal not in range(128), attempting delimiter detection
+2025-04-09 11:41:33,348 - INFO - Detected delimiter: ''
+2025-04-09 11:41:33,353 - ERROR - Error loading file tweet_emotions.csv: 'ascii' codec can't decode byte 0xc3 in position 56801: ordinal not in range(128)
+2025-04-09 11:41:33,355 - INFO - 127.0.0.1 - - [09/Apr/2025 11:41:33] "POST /upload HTTP/1.1" 200 -
+2025-04-09 11:41:46,469 - INFO - Loading file: Top Indian Places to Visit.csv
+2025-04-09 11:41:46,469 - INFO - Detected encoding: ascii
+2025-04-09 11:41:46,473 - WARNING - Default CSV load failed: 'ascii' codec can't decode byte 0xc3 in position 31273: ordinal not in range(128), attempting delimiter detection
+2025-04-09 11:41:46,478 - INFO - Detected delimiter: ','
+2025-04-09 11:41:46,478 - ERROR - Error loading file Top Indian Places to Visit.csv: 'ascii' codec can't decode byte 0xc3 in position 31273: ordinal not in range(128)
+2025-04-09 11:41:46,478 - INFO - 127.0.0.1 - - [09/Apr/2025 11:41:46] "POST /upload HTTP/1.1" 200 -
+2025-04-09 11:41:57,010 - INFO - Loading file: tweet_emotions.csv
+2025-04-09 11:41:57,010 - INFO - Detected encoding: ascii
+2025-04-09 11:41:57,010 - WARNING - Default CSV load failed: 'ascii' codec can't decode byte 0xc3 in position 56801: ordinal not in range(128), attempting delimiter detection
+2025-04-09 11:41:57,010 - INFO - Detected delimiter: ''
+2025-04-09 11:41:57,010 - ERROR - Error loading file tweet_emotions.csv: 'ascii' codec can't decode byte 0xc3 in position 56801: ordinal not in range(128)
+2025-04-09 11:41:57,020 - INFO - 127.0.0.1 - - [09/Apr/2025 11:41:57] "POST /upload HTTP/1.1" 200 -
+2025-04-09 11:50:58,775 - INFO -  * Detected change in 'C:\\Users\\ALSANA THAHIR\\Downloads\\emotion_detection_app\\app.py', reloading
+2025-04-09 11:50:59,274 - INFO -  * Restarting with stat
+2025-04-09 11:55:24,758 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 11:55:24,758 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 11:55:24,760 - INFO -  * Restarting with stat
+2025-04-09 11:55:27,613 - WARNING -  * Debugger is active!
+2025-04-09 11:55:27,615 - INFO -  * Debugger PIN: 132-075-018
+2025-04-09 11:55:36,827 - INFO - 127.0.0.1 - - [09/Apr/2025 11:55:36] "GET / HTTP/1.1" 200 -
+2025-04-09 11:55:36,923 - INFO - 127.0.0.1 - - [09/Apr/2025 11:55:36] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-09 11:55:45,491 - INFO - Loading file: tweet_emotions.csv
+2025-04-09 11:55:45,502 - ERROR - Error loading file tweet_emotions.csv: 'ascii' codec can't decode byte 0xc3 in position 56801: ordinal not in range(128)
+2025-04-09 11:55:45,506 - INFO - 127.0.0.1 - - [09/Apr/2025 11:55:45] "POST /upload HTTP/1.1" 200 -
+2025-04-09 11:55:45,531 - INFO - 127.0.0.1 - - [09/Apr/2025 11:55:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:57:20,320 - INFO - Loading file: motion.csv
+2025-04-09 11:57:20,325 - ERROR - Error loading file motion.csv: 'ascii' codec can't decode byte 0xc3 in position 56801: ordinal not in range(128)
+2025-04-09 11:57:20,325 - INFO - 127.0.0.1 - - [09/Apr/2025 11:57:20] "POST /upload HTTP/1.1" 200 -
+2025-04-09 11:57:20,357 - INFO - 127.0.0.1 - - [09/Apr/2025 11:57:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:57:29,195 - INFO - Loading file: motion.csv
+2025-04-09 11:57:29,195 - ERROR - Error loading file motion.csv: 'ascii' codec can't decode byte 0xc3 in position 56801: ordinal not in range(128)
+2025-04-09 11:57:29,204 - INFO - 127.0.0.1 - - [09/Apr/2025 11:57:29] "POST /upload HTTP/1.1" 200 -
+2025-04-09 11:57:29,228 - INFO - 127.0.0.1 - - [09/Apr/2025 11:57:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:57:49,430 - INFO - 127.0.0.1 - - [09/Apr/2025 11:57:49] "GET / HTTP/1.1" 200 -
+2025-04-09 11:57:49,464 - INFO - 127.0.0.1 - - [09/Apr/2025 11:57:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 11:58:01,505 - INFO - Loading file: motion.csv
+2025-04-09 11:58:01,508 - ERROR - Error loading file motion.csv: 'ascii' codec can't decode byte 0xc3 in position 56801: ordinal not in range(128)
+2025-04-09 11:58:01,513 - INFO - 127.0.0.1 - - [09/Apr/2025 11:58:01] "POST /upload HTTP/1.1" 200 -
+2025-04-09 11:58:01,542 - INFO - 127.0.0.1 - - [09/Apr/2025 11:58:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 12:02:11,399 - INFO -  * Detected change in 'C:\\Users\\ALSANA THAHIR\\Downloads\\emotion_detection_app\\app.py', reloading
+2025-04-09 12:02:12,035 - INFO -  * Restarting with stat
+2025-04-09 12:06:38,876 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-04-09 12:06:38,876 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-09 12:06:38,882 - INFO -  * Restarting with stat
+2025-04-09 12:06:44,590 - WARNING -  * Debugger is active!
+2025-04-09 12:06:44,596 - INFO -  * Debugger PIN: 132-075-018
+2025-04-09 12:06:47,852 - INFO - 127.0.0.1 - - [09/Apr/2025 12:06:47] "GET / HTTP/1.1" 200 -
+2025-04-09 12:06:47,961 - INFO - 127.0.0.1 - - [09/Apr/2025 12:06:47] "GET /static/style.css HTTP/1.1" 200 -
+2025-04-09 12:06:58,946 - INFO - 127.0.0.1 - - [09/Apr/2025 12:06:58] "POST /analyze HTTP/1.1" 200 -
+2025-04-09 12:06:58,992 - INFO - 127.0.0.1 - - [09/Apr/2025 12:06:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 12:07:18,901 - INFO - 127.0.0.1 - - [09/Apr/2025 12:07:18] "POST /analyze HTTP/1.1" 200 -
+2025-04-09 12:07:18,950 - INFO - 127.0.0.1 - - [09/Apr/2025 12:07:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 12:07:38,567 - INFO - 127.0.0.1 - - [09/Apr/2025 12:07:38] "POST /analyze HTTP/1.1" 200 -
+2025-04-09 12:07:38,616 - INFO - 127.0.0.1 - - [09/Apr/2025 12:07:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 12:07:57,909 - INFO - Loading file: motion.csv
+2025-04-09 12:07:57,921 - INFO - Detected delimiter: ''
+2025-04-09 12:07:57,924 - ERROR - Error loading file motion.csv: 'ascii' codec can't decode byte 0xc3 in position 56801: ordinal not in range(128)
+2025-04-09 12:07:57,924 - INFO - 127.0.0.1 - - [09/Apr/2025 12:07:57] "POST /analyze HTTP/1.1" 200 -
+2025-04-09 12:07:57,966 - INFO - 127.0.0.1 - - [09/Apr/2025 12:07:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 12:09:21,092 - INFO - 127.0.0.1 - - [09/Apr/2025 12:09:21] "GET / HTTP/1.1" 200 -
+2025-04-09 12:09:21,135 - INFO - 127.0.0.1 - - [09/Apr/2025 12:09:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 12:09:41,229 - INFO - 127.0.0.1 - - [09/Apr/2025 12:09:41] "POST /analyze HTTP/1.1" 200 -
+2025-04-09 12:09:41,273 - INFO - 127.0.0.1 - - [09/Apr/2025 12:09:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 12:12:21,028 - INFO - Loading file: trial.txt
+2025-04-09 12:12:21,028 - WARNING - Could not detect delimiter, defaulting to comma
+2025-04-09 12:12:21,028 - INFO - Detected delimiter: ','
+2025-04-09 12:12:21,044 - INFO - Loaded DataFrame shape: (4, 1)
+2025-04-09 12:12:23,732 - INFO - 127.0.0.1 - - [09/Apr/2025 12:12:23] "POST /analyze HTTP/1.1" 200 -
+2025-04-09 12:12:23,763 - INFO - 127.0.0.1 - - [09/Apr/2025 12:12:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 12:14:38,106 - INFO - 127.0.0.1 - - [09/Apr/2025 12:14:38] "GET /download HTTP/1.1" 200 -
+2025-04-09 12:26:58,076 - INFO - Loading file: trial.txt
+2025-04-09 12:26:58,076 - WARNING - Could not detect delimiter, defaulting to comma
+2025-04-09 12:26:58,076 - INFO - Detected delimiter: ','
+2025-04-09 12:26:58,076 - INFO - Loaded DataFrame shape: (4, 1)
+2025-04-09 12:26:58,854 - INFO - 127.0.0.1 - - [09/Apr/2025 12:26:58] "POST /analyze HTTP/1.1" 200 -
+2025-04-09 12:26:58,890 - INFO - 127.0.0.1 - - [09/Apr/2025 12:26:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-04-09 13:29:15,630 - INFO - 127.0.0.1 - - [09/Apr/2025 13:29:15] "POST /analyze HTTP/1.1" 200 -
+2025-04-09 13:29:15,678 - INFO - 127.0.0.1 - - [09/Apr/2025 13:29:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
