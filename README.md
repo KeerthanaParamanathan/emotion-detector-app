@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Emotion Detection App
 
 A Flask-based web app for detecting emotions (e.g., happy, sad, angry, fear, neutral) from text data.
@@ -21,3 +22,6 @@ A Flask-based web app for detecting emotions (e.g., happy, sad, angry, fear, neu
    ```bash
    git clone <your-friend’s-repo-url>
    cd emotion-detection-app
+=======
+# emotion-detector-app
+>>>>>>> dc634f8e323d75d6e532155c9c83fc23252c29bc
