@@ -21,8 +21,12 @@ logging.basicConfig(level=logging.INFO, filename='/tmp/app.log', filemode='a',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Download NLTK resources
-nltk.download('vader_lexicon', quiet=True)
-sid = SentimentIntensityAnalyzer()
+try:
+    nltk.download('vader_lexicon', quiet=True)
+    sid = SentimentIntensityAnalyzer()
+except Exception as e:
+    logging.error(f"Failed to initialize NLTK: {str(e)}")
+    sid = None
 
 # Utility Functions
 def detect_encoding(file):
@@ -67,7 +71,7 @@ def load_file(uploaded_file):
         return None
 
 def analyze_emotion(text):
-    if not isinstance(text, str) or not text.strip():
+    if not sid or not isinstance(text, str) or not text.strip():
         return "Neutral"
     scores = sid.polarity_scores(text)
     compound_score = scores['compound']
