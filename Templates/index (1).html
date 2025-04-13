@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Emotion Analyzer</h1>
+        {% if error %}
+            <p class="error">{{ error }}</p>
+        {% endif %}
+
+        <h2>Analyze Text</h2>
+        <form method="POST" action="/analyze">
+            <textarea name="text" rows="4" placeholder="Type text to analyze emotion..."></textarea>
+            <button type="submit">Analyze</button>
+        </form>
+
+        <h2>Upload Dataset</h2>
+        <form method="POST" action="/analyze" enctype="multipart/form-data">
+            <label for="file">Upload a dataset (.csv, .txt, .tsv):</label>
+            <input type="file" id="file" name="file" accept=".csv,.txt,.tsv" required>
+            <button type="submit">Upload and Analyze</button>
+        </form>
+    </div>
+</body>
+</html>
