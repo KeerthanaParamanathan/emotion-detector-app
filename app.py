@@ -1,3 +1,5 @@
+import matplotlib
+matplotlib.use('Agg')  # Non-interactive backend
 from flask import Flask, render_template, request, send_file
 import pandas as pd
 import io
@@ -15,7 +17,7 @@ import tempfile
 app = Flask(__name__)
 
 # Initialize logging
-logging.basicConfig(level=logging.INFO, filename='app.log', filemode='a',
+logging.basicConfig(level=logging.INFO, filename='/tmp/app.log', filemode='a',
                     format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Download NLTK resources
@@ -24,14 +26,12 @@ sid = SentimentIntensityAnalyzer()
 
 # Utility Functions
 def detect_encoding(file):
-    """Detect file encoding."""
-    raw_data = file.read(2048)  # Increased sample size
+    raw_data = file.read(2048)
     result = chardet.detect(raw_data)
     file.seek(0)
     return result['encoding'] or 'utf-8'
 
 def detect_delimiter(file, encoding='utf-8'):
-    """Detect delimiter for CSV-like files."""
     file.seek(0)
     sample = file.read(2048).decode(encoding, errors='replace')
     sniffer = csv.Sniffer()
@@ -44,7 +44,6 @@ def detect_delimiter(file, encoding='utf-8'):
         file.seek(0)
 
 def load_file(uploaded_file):
-    """Load data from various file formats."""
     logging.info(f"Loading file: {uploaded_file.filename}")
     try:
         filename = uploaded_file.filename.lower()
@@ -68,9 +67,8 @@ def load_file(uploaded_file):
         return None
 
 def analyze_emotion(text):
-    """Analyze emotion using VADER sentiment analyzer."""
     if not isinstance(text, str) or not text.strip():
-        return "Neutral"  # Default for empty or invalid input
+        return "Neutral"
     scores = sid.polarity_scores(text)
     compound_score = scores['compound']
     if compound_score >= 0.05:
@@ -81,7 +79,6 @@ def analyze_emotion(text):
         return "Neutral"
 
 def plot_to_base64(fig):
-    """Convert matplotlib figure to base64 string."""
     img = io.BytesIO()
     fig.savefig(img, format='png', bbox_inches='tight')
     img.seek(0)
@@ -89,7 +86,6 @@ def plot_to_base64(fig):
     return base64.b64encode(img.getvalue()).decode('utf8')
 
 def generate_emotion_plot(df, text_column):
-    """Generate an emotion distribution plot."""
     df['emotion'] = df[text_column].apply(analyze_emotion)
     fig, ax = plt.subplots(figsize=(8, 5))
     sns.countplot(x='emotion', data=df, palette='coolwarm', order=['Positive', 'Neutral', 'Negative'])
@@ -99,7 +95,11 @@ def generate_emotion_plot(df, text_column):
 # Flask Routes
 @app.route('/')
 def index():
-    return render_template('index.html')
+    try:
+        return render_template('index.html')
+    except Exception as e:
+        logging.error(f"Error rendering index.html: {str(e)}")
+        return "Server Error: Template issue", 500
 
 @app.route('/analyze', methods=['POST'])
 def analyze():
@@ -116,19 +116,14 @@ def analyze():
             if df.empty:
                 return render_template('index.html', error="File is empty or could not be parsed.")
 
-            # Detect text column
             text_candidates = [col for col in df.columns if 'text' in col.lower() or 'comment' in col.lower()]
             text_column = text_candidates[0] if text_candidates else df.columns[0]
 
-            # Analyze emotions
             df['emotion'] = df[text_column].apply(analyze_emotion)
             plot = generate_emotion_plot(df, text_column)
 
-            # Save to CSV
-            with tempfile.NamedTemporaryFile(delete=False, suffix='.csv') as temp_file:
-                df.to_csv(temp_file.name, index=False)
-                temp_file_path = temp_file.name
-            os.replace(temp_file_path, 'processed_data.csv')
+            temp_file_path = '/tmp/processed_data.csv'
+            df.to_csv(temp_file_path, index=False)
 
             return render_template('data_preview.html',
                                    data=df.head().to_html(classes='table'),
@@ -136,7 +131,6 @@ def analyze():
                                    plot=plot,
                                    columns=df.columns.tolist())
 
-    # Handle text input
     emotion = analyze_emotion(text)
     return render_template('data_preview.html',
                            prediction=emotion,
@@ -144,13 +138,11 @@ def analyze():
 
 @app.route('/download')
 def download():
-    if not os.path.exists('processed_data.csv'):
+    temp_file_path = '/tmp/processed_data.csv'
+    if not os.path.exists(temp_file_path):
         return render_template('data_preview.html', error="No data to download.")
     
-    output = io.BytesIO()
-    pd.read_csv('processed_data.csv').to_csv(output, index=False)
-    output.seek(0)
-    return send_file(output, mimetype='text/csv', as_attachment=True, download_name='processed_data.csv')
+    return send_file(temp_file_path, mimetype='text/csv', as_attachment=True, download_name='processed_data.csv')
 
 if __name__ == '__main__':
     app.run(debug=True)
